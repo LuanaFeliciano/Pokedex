@@ -14,7 +14,7 @@ const fetchPokemon = async (pokemon) => {
 
     if (APIResponse.status === 200) {
         const data = await APIResponse.json();
-    return data;
+        return data;
     }
 
     
@@ -53,7 +53,7 @@ form.addEventListener('submit', (event) => {
 prev.addEventListener('click', () => {
     if (searchPokemon>1){
         searchPokemon -= 1;
-    renderPokemon(searchPokemon)
+        renderPokemon(searchPokemon)
     }
 } )
 
